@@ -1,0 +1,31 @@
+Run where the init is to create an executable
+
+go build
+
+-----------------------------------------------
+Locate the install path for go with
+
+go list  -f '{{.Target}}'
+
+// File /home/go/bin/hello
+// Install path /home/go/bin
+
+-----------------------------------------------
+Export path as environment variable
+
+export PATH=$PATH:/path/to/your/install/directory
+
+-----------------------------------------------
+Alternatively you can change the install path of go with
+
+go env -w GOBIN=/path/to/your/bin
+
+-----------------------------------------------
+Run and execute
+
+go install
+
+-----------------------------------------------
+Now run the application
+
+name_of_file
